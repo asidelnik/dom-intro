@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <title>Change Text Button</title>
+</head>
+
+<body>
+
+    <button id="btnId" onclick="changeText()">Change my text</button>
+
+    <script>
+        var changeTextBo = false;
+        function changeText() {
+            
+            function changeText() {
+                document.getElementById('btnId').innerHTML = "Change me back!";
+                changeTextBo = true;
+            }
+            function changeBack() {
+                document.getElementById('btnId').innerHTML = "Change my text!";
+                changeTextBo = false;
+            }
+
+            if(!changeTextBo) {
+                changeText();
+            } else {
+                changeBack();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

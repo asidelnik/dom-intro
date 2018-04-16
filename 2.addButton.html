@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <title>Add Button</title>
+</head>
+
+<body>
+    <div id="container" onmouseover="changeText()"></div>
+
+    <script>
+        var btn = document.createElement("button");
+        var btnText = document.createTextNode("Button Text");
+
+        btn.setAttribute("type", "button");
+        btn.appendChild(btnText);
+        document.getElementById("container").appendChild(btn);
+        
+        
+        // 1. Create a btn element
+        // 2. Create text & attribute nodes
+        // 3. Append them to the btn variable
+        // 4. get div and append it the btn element
+
+        // var btnTypeAttrName = document.createAttribute("type");
+        // var btnTypeAttrValue = document.createTextNode("button");
+        // btn.appendChild(btnText).
+    </script>
+</body>
+
+</html>
